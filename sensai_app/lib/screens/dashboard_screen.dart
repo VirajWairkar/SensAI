@@ -155,8 +155,8 @@ class _DashboardScreenState extends State<DashboardScreen>
       noise: snap.noiseDb.round(),
       light: snap.lightLux,
       heartRate: snap.heartRateEstimate,
-      time: DateTime.now().hour,
     );
+
 
     if (!mounted) return;
     setState(() {

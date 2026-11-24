@@ -16,12 +16,11 @@ class ApiService {
     required int noise,
     required int light,
     required int heartRate,
-    required int time,
     double motionIntensity = 0.5,
     int crowdDensity = 0,
   }) async {
-
     final url = Uri.parse('$_baseUrl/predict');
+
     try {
       final response = await http
           .post(
@@ -31,9 +30,7 @@ class ApiService {
               'noise': noise,
               'light': light,
               'heartRate': heartRate,
-              'time': time,
               'motionIntensity': motionIntensity,
-
               'crowdDensity': crowdDensity,
             }),
           )
