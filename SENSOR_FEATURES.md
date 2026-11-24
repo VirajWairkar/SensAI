@@ -1,4 +1,6 @@
-# SensAI — Real Sensor Integration Guide
+﻿# SensAI — Real Sensor Integration Guide
+
+> Historical prototype notes: this document describes an earlier version, including features absent from the current source. See [README.md](README.md) for current behavior, setup, limitations, and the earlier APK download.
 
 ## What Was Added
 
@@ -58,3 +60,4 @@ static const String _baseUrl = 'http://192.168.x.x:8000';
 If the FastAPI backend is unreachable, the app automatically falls back to a
 rule-based risk classifier using the sensor readings — so the app remains
 functional without a server.
+
